@@ -3,6 +3,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import HeroImg from "../img/banner_Hero1.jpg";
+import HeroImg2 from "../img/banner_Hero2.jpg";
+import HeroImg3 from "../img/banner_Hero3.jpg";
 
 function HeroSlider() {
   return (
@@ -30,7 +33,7 @@ function HeroSlider() {
                   Shop Now
                 </Link>
               </div>
-              <img src="src/img/banner_Hero1.jpg" alt="slider hero 1" />
+              <img src={HeroImg} alt="slider hero 1" />
             </SwiperSlide>
 
             <SwiperSlide>
@@ -44,7 +47,7 @@ function HeroSlider() {
                   Shop Now
                 </Link>
               </div>
-              <img src="src/img/banner_Hero2.jpg" alt="slider hero 2" />
+              <img src={HeroImg2} alt="slider hero 2" />
             </SwiperSlide>
 
             <SwiperSlide>
@@ -58,7 +61,7 @@ function HeroSlider() {
                   Shop Now
                 </Link>
               </div>
-              <img src="src/img/banner_Hero3.jpg" alt="slider hero 3" />
+              <img src={HeroImg3} alt="slider hero 3" />
             </SwiperSlide>
           </Swiper>
         </div>
