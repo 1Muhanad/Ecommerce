@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import HeroSlider from "../../components/HeroSlider";
 import PadgeTransition from "../../components/PadgeTransition";
-import SlideProducts from "../../components/slideProducts/slideProducts";
+import SlideProducts from "../../components/slideProducts/SlideProducts";
 import SlideProductsLoading from "../../components/slideProducts/SlideProductsLoading";
 import "./home.css";
 
