@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PadgeTransition from "../../components/PadgeTransition";
 import ProductImages from "../../components/slideProducts/ProductImages";
-import SlideProducts from "../../components/slideProducts/slideProducts";
+import SlideProducts from "../../components/slideProducts/SlideProducts";
 import SlideProductsLoading from "../../components/slideProducts/SlideProductsLoading";
 import "./ProductDetails.css";
 import ProductDetailsLoading from "./ProductDetailsLoading";

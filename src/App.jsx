@@ -6,7 +6,7 @@ import TopHeader from "./components/header/TopHeader";
 import ScrollToTop from "./components/ScrollToTop";
 import Cart from "./page/Cart/Cart";
 import CategoryPadge from "./page/CategoryPadge/CategoryPadge";
-import Favorites from "./page/favorites/favorites";
+import Favorites from "./page/favorites/Favorites";
 import Home from "./page/home/Home";
 import ProductDetails from "./page/productDetails/ProductDetails";
 import SearchResults from "./page/SearchResults";
