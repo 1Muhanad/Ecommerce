@@ -39,7 +39,11 @@ function CategoryPadge() {
             </div>
             <div className="products">
               {categoryProducts.products.map((item, index) => (
-                <Product item={item} key={index} />
+                <Product
+                  style={{ position: "sticky " }}
+                  item={item}
+                  key={index}
+                />
               ))}
             </div>
           </div>

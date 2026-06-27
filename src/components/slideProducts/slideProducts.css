@@ -165,14 +165,19 @@
   .product:hover .icons {
     right: 5px;
   }
+
   .product .img_product img {
     height: 160px;
     width: auto;
     padding-right: 136px;
   }
   .top_slide {
+    text-align: center;
   }
   .top_slide::after {
     transform: translate(-50%, -50%);
+  }
+  .product .stars {
+    justify-content: center;
   }
 }
