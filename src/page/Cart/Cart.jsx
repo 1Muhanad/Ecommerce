@@ -20,13 +20,12 @@ function Cart() {
 
         <div className="items">
           {cartItems.length === 0 ? (
-            <p>Your Cart is Empty</p>
+            <p className="empty">Your Cart is Empty</p>
           ) : (
             cartItems.map((item, index) => (
               <div className="item_cart" key={index}>
                 <div className="image_name">
                   <div className="image_item">
-                    {" "}
                     <img src={item.images[0]} alt="image" />
                   </div>
 

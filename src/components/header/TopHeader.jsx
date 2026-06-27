@@ -12,13 +12,16 @@ function TopHeader() {
   return (
     <div className="top_header">
       <div className="container">
-        <Link to="/" className="logo">
-          <img src={Logo} alt="Logo" />{" "}
-        </Link>
+        <div className="logo_width">
+          <Link to="/">
+            <img src={Logo} className="logo" alt="Logo" />{" "}
+          </Link>
+        </div>
+        <div className="header_width search_width">
+          <SearchBox />
+        </div>
 
-        <SearchBox />
-
-        <div className="header_icons">
+        <div className="header_icons header_width ">
           <div className="icon">
             <Link to="/favorites">
               <FaRegHeart />

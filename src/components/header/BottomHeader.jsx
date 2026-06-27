@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { FaUserPlus } from "react-icons/fa6";
-import { IoMdMenu } from "react-icons/io";
+import { FaTimes } from "react-icons/fa";
+import { FaBars, FaUserPlus } from "react-icons/fa6";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { PiSignInBold } from "react-icons/pi";
 import { Link, useLocation } from "react-router-dom";
+import "./header.css";
 
 const NavLinks = [
   { title: "Home", link: "/" },
@@ -16,11 +17,12 @@ const NavLinks = [
 function BottomHeader() {
   const location = useLocation();
   const [categories, setCategories] = useState([]);
-
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsCategoryOpen(false);
+    setIsMenuOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -38,11 +40,9 @@ function BottomHeader() {
               className="category_btn"
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
             >
-              <IoMdMenu />
               <p>Browse Category</p>
               <MdOutlineArrowDropDown />
             </div>
-
             <div
               className={`category_nav_list ${isCategoryOpen ? "active" : ""}`}
             >
@@ -54,7 +54,8 @@ function BottomHeader() {
             </div>
           </div>
 
-          <div className="nav_links">
+          {/* Desktop nav links */}
+          <ul className="nav_links">
             {NavLinks.map((item) => (
               <li
                 key={item.link}
@@ -63,7 +64,7 @@ function BottomHeader() {
                 <Link to={item.link}>{item.title}</Link>
               </li>
             ))}
-          </div>
+          </ul>
         </nav>
 
         <div className="sign_regs_icon">
@@ -72,6 +73,54 @@ function BottomHeader() {
           </Link>
           <Link to="/">
             <FaUserPlus />
+          </Link>
+
+          {/* Hamburger button (mobile only) */}
+          <button
+            className="nav-btn"
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Open menu"
+          >
+            <FaBars />
+          </button>
+        </div>
+      </div>
+
+      {/* Overlay */}
+      <div
+        className={`mobile_overlay ${isMenuOpen ? "active" : ""}`}
+        onClick={() => setIsMenuOpen(false)}
+      />
+
+      {/* Slide-in mobile menu */}
+      <div className={`mobile_menu ${isMenuOpen ? "active" : ""}`}>
+        <button
+          className="mobile_menu_close"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <FaTimes />
+        </button>
+
+        <ul className="mobile_nav_links">
+          {NavLinks.map((item) => (
+            <li
+              key={item.link}
+              className={location.pathname === item.link ? "active" : ""}
+            >
+              <Link to={item.link} onClick={() => setIsMenuOpen(false)}>
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mobile_menu_footer">
+          <Link to="/" className="mobile_menu_action">
+            <PiSignInBold /> Sign In
+          </Link>
+          <Link to="/" className="mobile_menu_action">
+            <FaUserPlus /> Register
           </Link>
         </div>
       </div>

@@ -10,7 +10,6 @@ import Favorites from "./page/favorites/Favorites";
 import Home from "./page/home/Home";
 import ProductDetails from "./page/productDetails/ProductDetails";
 import SearchResults from "./page/SearchResults";
-
 function App() {
   return (
     <div>

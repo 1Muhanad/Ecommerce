@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import HeroImg from "../img/banner_Hero1.jpg";
 import HeroImg2 from "../img/banner_Hero2.jpg";
 import HeroImg3 from "../img/banner_Hero3.jpg";
+import "./heroSlider.css";
 
 function HeroSlider() {
   return (

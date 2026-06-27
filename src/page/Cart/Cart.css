@@ -143,3 +143,14 @@
   background: transparent;
   color: var(--main_color);
 }
+@media (max-width: 600px) {
+  .checkout .ordersummary {
+    width: 73%;
+  }
+  .checkout .items {
+    height: auto;
+  }
+  .checkout .empty {
+    margin-bottom: 15px;
+  }
+}
