@@ -184,7 +184,7 @@ header {
   padding: 0 25px;
 }
 .btm_header .nav_links li.active {
-  background-color: #0079ca;
+  background-color: #1B263B;
 }
 .btm_header .nav_links li a {
   color: var(--white_color);
@@ -330,6 +330,7 @@ header {
   list-style: none;
   width: 100%;
   border: 1px solid var(--border_color);
+  z-index: 9999;
 }
 .suggestions li {
   padding: 5px 5px;
@@ -345,6 +346,22 @@ header {
   width: 30px;
 }
 @media (max-width: 570px) {
+  .top_header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo_width {
+  width: auto;
+  flex: 1;
+}
+.header_icons {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
   .nav-btn {
     display: flex;
     align-items: center;

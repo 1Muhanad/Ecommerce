@@ -22,30 +22,31 @@ function HeroSlider() {
             pagination={true}
             modules={[Pagination, Autoplay]}
             className="mySwiper"
+            style={{ "border-radius": "20px" }}
           >
             <SwiperSlide>
               <div className="content">
-                <h4>Introducing the new</h4>
+                <h4>Men’s fashion</h4>
                 <h3>
-                  Microsoft Xbox <br /> 360 Controller
+                 Fresh fits for the season
                 </h3>
-                <p>Windows Xp/10/7/8 Ps3, Tv Xbox</p>
+                <p>Clean lines and staples you’ll wear on repeat.</p>
                 <Link to="/" className="btn">
-                  Shop Now
+                  View collection
                 </Link>
               </div>
               <img src={HeroImg} alt="slider hero 1" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="content">
-                <h4>Introducing the new</h4>
+           <div className="content">
+                <h4>Fragrance</h4>
                 <h3>
-                  Microsoft Xbox <br />
+                  Scents that stay with you
                 </h3>
-                <p>Windows Xp/10/7/8 Ps3, Tv Xbox</p>
+                <p>Signature bottles and everyday favorites.</p>
                 <Link to="/" className="btn">
-                  Shop Now
+                  Discover scents
                 </Link>
               </div>
               <img src={HeroImg2} alt="slider hero 2" />
@@ -53,13 +54,13 @@ function HeroSlider() {
 
             <SwiperSlide>
               <div className="content">
-                <h4>Introducing the new</h4>
+                <h4>Fragrance</h4>
                 <h3>
-                  Microsoft Xbox <br />
+                  Scents that stay with you
                 </h3>
-                <p>Windows Xp/10/7/8 Ps3, Tv Xbox</p>
+                <p>Signature bottles and everyday favorites.</p>
                 <Link to="/" className="btn">
-                  Shop Now
+                  Discover scents
                 </Link>
               </div>
               <img src={HeroImg3} alt="slider hero 3" />
