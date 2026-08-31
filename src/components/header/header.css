@@ -170,7 +170,7 @@ header {
 }
 .btm_header .category_nav .category_btn p {
   color: var(--white_color);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 .btm_header .nav_links {
@@ -184,7 +184,7 @@ header {
   padding: 0 25px;
 }
 .btm_header .nav_links li.active {
-  background-color: #1B263B;
+  background-color: #4b7d7f;
 }
 .btm_header .nav_links li a {
   color: var(--white_color);

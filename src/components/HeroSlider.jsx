@@ -7,6 +7,7 @@ import HeroImg from "../img/banner_Hero1.jpg";
 import HeroImg2 from "../img/banner_Hero2.jpg";
 import HeroImg3 from "../img/banner_Hero3.jpg";
 import "./heroSlider.css";
+import { color } from "framer-motion";
 
 function HeroSlider() {
   return (
@@ -26,7 +27,7 @@ function HeroSlider() {
           >
             <SwiperSlide>
               <div className="content">
-                <h4>Men’s fashion</h4>
+                <h4 style={{color : "white"}}>Men’s fashion</h4>
                 <h3>
                  Fresh fits for the season
                 </h3>
@@ -40,7 +41,7 @@ function HeroSlider() {
 
             <SwiperSlide>
            <div className="content">
-                <h4>Fragrance</h4>
+                <h4 style={{color : "white"}}>Fragrance</h4>
                 <h3>
                   Scents that stay with you
                 </h3>
@@ -54,7 +55,7 @@ function HeroSlider() {
 
             <SwiperSlide>
               <div className="content">
-                <h4>Fragrance</h4>
+                <h4 style={{color : "white"}}>Fragrance</h4>
                 <h3>
                   Scents that stay with you
                 </h3>
