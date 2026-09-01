@@ -32,7 +32,7 @@ function ProductInfo({ products }) {
           </div>
         </div>
       </div>,
-      { duration: 3500 },
+      { duration: 2000 },
     );
   };
 

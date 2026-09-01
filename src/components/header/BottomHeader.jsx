@@ -68,10 +68,10 @@ function BottomHeader() {
         </nav>
 
         <div className="sign_regs_icon">
-          <Link to="/">
+          <Link to="/login">
             <PiSignInBold />
           </Link>
-          <Link to="/">
+          <Link to="/signup">
             <FaUserPlus />
           </Link>
 

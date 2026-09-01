@@ -51,7 +51,13 @@ function CartProvider({ children }) {
   };
 
   const removeFromCart = (id) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+
+    const confirmed = window.confirm("Are you sure you want to remove this item ?");
+   if (confirmed) {
+     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+   }
+
+
   };
 
   const addToCart = (item) => {

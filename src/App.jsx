@@ -10,6 +10,9 @@ import Favorites from "./page/favorites/Favorites";
 import Home from "./page/home/Home";
 import ProductDetails from "./page/productDetails/ProductDetails";
 import SearchResults from "./page/SearchResults";
+import Signup from "./page/Signup/Signup";
+import "./index.css";
+import Login from "./page/Login/Login";
 function App() {
   return (
     <div>
@@ -39,6 +42,8 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/category/:category" element={<CategoryPadge />} />
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/login" element={<Login />}/>
         </Routes>
       </AnimatePresence>
     </div>

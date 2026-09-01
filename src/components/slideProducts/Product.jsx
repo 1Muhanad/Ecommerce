@@ -15,6 +15,7 @@ function Product({ item }) {
   const isInCart = cartItems.some((i) => i.id === item.id);
 
   const handleAddToCart = () => {
+   if (isInCart) return ; 
     addToCart(item);
 
     toast.success(
@@ -69,12 +70,12 @@ function Product({ item }) {
         </div>
 
         <p className="price">
-          <span>{item.price}</span>
+          <span>{item.price}EGP </span>
         </p>
       </Link>
 
       <div className="icons">
-        <span className="btn_addtocart" onClick={handleAddToCart}>
+        <span className="btn_addtocart" onClick={handleAddToCart} >
           <FaCartArrowDown />
         </span>
         <span

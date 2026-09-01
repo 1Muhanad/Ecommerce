@@ -18,9 +18,20 @@ function Cart() {
       <div className="ordersummary">
         <h1>Order Summary</h1>
 
-        <div className="items">
+        <div className="items flex flex-col justify-center">
           {cartItems.length === 0 ? (
-            <p className="empty">Your Cart is Empty</p>
+    <div className="min-h-[350px]">
+    <p className="text-[16px] text-[#5f6f7a]">
+      Your Cart is Empty
+    </p>
+
+    <a
+      href="/"
+      className="text-[16px] text-[#5f6f7a] hover:text-[#5b9ea4]"
+    >
+      Back to shopping..
+    </a>
+  </div>
           ) : (
             cartItems.map((item, index) => (
               <div className="item_cart" key={index}>
